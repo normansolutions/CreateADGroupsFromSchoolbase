@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Schoolbase" Class="GetGroupDataDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=STELLA\STELLASQL;Initial Catalog=Schoolbase;Integrated Security=True" SettingsObjectName="CreateADGroups.Properties.Settings" SettingsPropertyName="SchoolbaseConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.GroupRep" Member="GroupReps">
+    <Type Name="GroupRep">
+      <Column Name="AcrIdent" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="AcYearIdent" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="CurrIdent" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="GroupIdent" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Subject" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GroupName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="CurricSub" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Mnem" Type="System.String" DbType="NVarChar(6)" CanBeNull="true" />
+      <Column Name="YearName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Class" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FullName" Type="System.String" DbType="NVarChar(60) NOT NULL" CanBeNull="false" />
+      <Column Name="Mnem2" Type="System.String" DbType="NVarChar(6)" CanBeNull="true" />
+      <Column Name="Mnem3" Type="System.String" DbType="NVarChar(6)" CanBeNull="true" />
+      <Column Name="Mnem4" Type="System.String" DbType="NVarChar(6)" CanBeNull="true" />
+      <Column Name="SV25" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="Pu_CompNo" Type="System.String" DbType="NVarChar(12)" CanBeNull="true" />
+      <Column Name="Pu_Surname" Type="System.String" DbType="NVarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="Pu_Firstname" Type="System.String" DbType="NVarChar(45) NOT NULL" CanBeNull="false" />
+      <Column Name="Pu_GivenName" Type="System.String" DbType="NVarChar(35)" CanBeNull="true" />
+      <Column Name="Pu_Form" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="Pu_Boarding" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Pu_Dob" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Pu_Gender" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="Pu_Doe" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Pu_CandNo" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="Pu_LastSchoolId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Pu_Schol" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Pu_SchDetails" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Pu_Info" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Pu_PSHouse" Type="System.String" DbType="NVarChar(9)" CanBeNull="true" />
+      <Column Name="Pu_OFConnection" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Pu_Tutor" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="PupSecondName" Type="System.String" DbType="NVarChar(35)" CanBeNull="true" />
+      <Column Name="PupThirdName" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="PupYear" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BoarderIdent" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="RelIdent" Type="System.String" DbType="NVarChar(3)" CanBeNull="true" />
+      <Column Name="GPNum" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PType" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="StageOfProspect" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="PupProposedDateIn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PupProposedYear" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PupH1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PupH2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PTg1" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="LeftToGoToCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PupLeftToGoTo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PupHowHear" Type="System.String" DbType="NVarChar(35)" CanBeNull="true" />
+      <Column Name="PupDateArchived" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FTime" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="PupOrigNum" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="YearIdent" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ClassIdent" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="UserIdent" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PupEntScore1" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PupEntScore2" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PupEntScore3" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PupEntScore4" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="PupEntScore5" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="PupEntNum" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PupEntGroup" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PupBurReq" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="PupScholReq" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="PupIntNote" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PupMedNote" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PupForestEntIdent" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="OfferIdent" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="PupNewForm" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="NatIdent" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PupGCSEMean" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="PupGCSESubs" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PupGCSEScore" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PupA1Subs" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PupA1Score" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PupA2Subs" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PupA2Score" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PupAltRoll" Type="System.String" DbType="NVarChar(6)" CanBeNull="true" />
+      <Column Name="PupInterAgree" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="PupAdded" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PupFullSurname" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="PupTransferKey" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="PupUCI" Type="System.String" DbType="NVarChar(13)" CanBeNull="true" />
+      <Column Name="PupUPN" Type="System.String" DbType="NVarChar(13)" CanBeNull="true" />
+      <Column Name="PupRefTake" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="House2Ident" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PupMobile" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="PupEmail" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PupCohort" Type="System.String" DbType="NVarChar(7) NOT NULL" CanBeNull="false" />
+      <Column Name="PupSibPos" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="PupTransKey2" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="TutGpIdent" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PupSpecial1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PupSpecial2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FeedAgentIdent" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DormIdent" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PupTransKey3" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="PupReportName" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
+      <Column Name="PupSpecial3" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pupWorkperson" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="dba_stm_moodlenumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LanIdent" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="PupNew" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="PupExamName" Type="System.String" DbType="NVarChar(80)" CanBeNull="true" />
+      <Column Name="PupFeeNote" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="EthIdent" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="dba_stm_prevname" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="PupNote" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PupSpecial4" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ClassIdent2" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="PupUpDated" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="PupLastExport" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NatIdent2" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PupPassNo" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="PupPassIssuePlace" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="PupPassIssued" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PupPassExpires" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PupVisaExpires" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PupNHNo" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="PupDater" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="PupTempPType" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="PupLastClass" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="PupTransKey4" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="PupImportName" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
+      <Column Name="PupCare" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="PupCareTemp" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="HouseIdent" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ShadowPType" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="ShadowUserIdent" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ShadowClassIdent" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ShadowYearIdent" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ShadowHouseIdent" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ShadowHouse2Ident" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="PupXTime" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="PupLastHouse" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="PupLastTutor" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="PupLastYear" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CentreNo" Type="System.String" DbType="NVarChar(7)" CanBeNull="true" />
+      <Column Name="PupAltUCI" Type="System.String" DbType="NVarChar(13)" CanBeNull="true" />
+      <Column Name="PupEmail2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PupULN" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="PupADSname" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="PupProbLeaveDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PupHashName" Type="System.String" DbType="NVarChar(35)" CanBeNull="true" />
+      <Column Name="PupPadre" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="PupMadre" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="PupilADName" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="PupShield" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="PupVisaNo" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="PupVisaIssued" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PupVisaType" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="PoliceRegistrationCode" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="FinPaymentPlanIdent" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ShadowBoarderIdent" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="PupEmailExam" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ExtCand" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="PupilDisplayName" Type="System.String" DbType="NVarChar(60) NOT NULL" CanBeNull="false" />
+      <Column Name="BloodTypeIdent" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="PassportType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PupEHIC" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="PupCAS" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="PupDetailsChecked" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="PupRSQtyTemp" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PupMedAlert" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="PupSENAlert" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="PupBoardingNotes" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PupSQARegister" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="PupFL1" Type="System.String" DbType="NVarChar(25)" CanBeNull="true" />
+      <Column Name="PupFL2" Type="System.String" DbType="NVarChar(35)" CanBeNull="true" />
+      <Column Name="PupFL3" Type="System.String" DbType="NVarChar(35)" CanBeNull="true" />
+      <Column Name="PupFL4" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="PupFL5" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="AuthTypeIdent" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="PupPassword" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="PupInitialPassword" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="PupLogonLocked" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="PupLogonAttemptCount" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="House" Type="System.String" DbType="NVarChar(9)" CanBeNull="true" />
+      <Column Name="Pu_House" Type="System.String" DbType="NVarChar(9)" CanBeNull="true" />
+      <Column Name="PropPType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="YearDesc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PupNationality" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="StaffIdent" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StaffIdent2" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="StaffIdent3" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="StaffIdent4" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Tutor" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="S1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="S2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="S3" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="S4" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TutMnem" Type="System.String" DbType="NVarChar(6)" CanBeNull="true" />
+      <Column Name="AgeAt" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="AgeDec" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Teachers" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
